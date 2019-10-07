@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190115 12:07:37.472" generator="Robot 3.1.1 (Python 2.7.15 on win32)">
+<suite source="C:\Users\anderson_benet\PycharmProjects\demo_legado_credito\test\Home.robot" id="s1" name="Home">
+<test id="s1-t1" name="TC - Gerar">
+<kw name="Executar step1">
+<kw name="Run">
+<arguments>
+<arg>${notepad++}</arg>
+</arguments>
+<msg timestamp="20190115 12:07:38.293" level="FAIL">No keyword with name 'Run' found.</msg>
+<status status="FAIL" endtime="20190115 12:07:38.294" starttime="20190115 12:07:38.293"></status>
+</kw>
+<status status="FAIL" endtime="20190115 12:07:38.294" starttime="20190115 12:07:38.292"></status>
+</kw>
+<status status="FAIL" endtime="20190115 12:07:38.294" critical="yes" starttime="20190115 12:07:38.291">No keyword with name 'Run' found.</status>
+</test>
+<status status="FAIL" endtime="20190115 12:07:38.295" starttime="20190115 12:07:37.479"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Home" pass="0">Home</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20190115 12:07:38.290" level="ERROR">Error in file 'C:\Users\anderson_benet\PycharmProjects\demo_legado_credito\test\Home.robot': Initializing test library 'AutoItLibrary' with no arguments failed: com_error: (-2147221005, 'Cadeia de caracteres de classe inv\xe1lida', None, None)
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\AutoItLibrary\__init__.py", line 79, in __init__
+    self._AutoIt = win32com.client.Dispatch("AutoItX3.Control")
+  File "c:\python27\lib\site-packages\win32com\client\__init__.py", line 95, in Dispatch
+    dispatch, userName = dynamic._GetGoodDispatchAndUserName(dispatch,userName,clsctx)
+  File "c:\python27\lib\site-packages\win32com\client\dynamic.py", line 114, in _GetGoodDispatchAndUserName
+    return (_GetGoodDispatch(IDispatch, clsctx), userName)
+  File "c:\python27\lib\site-packages\win32com\client\dynamic.py", line 91, in _GetGoodDispatch
+    IDispatch = pythoncom.CoCreateInstance(IDispatch, None, clsctx, pythoncom.IID_IDispatch)</msg>
+</errors>
+</robot>
